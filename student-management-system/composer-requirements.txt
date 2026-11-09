@@ -1,0 +1,13 @@
+Required Composer packages for this project overlay:
+laravel/breeze (dev dependency; for authentication scaffolding)
+spatie/laravel-permission (roles and permissions)
+
+Install in a fresh Laravel app:
+composer create-project laravel/laravel student-management-system
+cd student-management-system
+composer require spatie/laravel-permission
+composer require laravel/breeze --dev
+php artisan breeze:install blade
+npm install && npm run build
+
+Then copy the contents of this package over the fresh Laravel project (merge folders), configure .env, and follow README.md.
